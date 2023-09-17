@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #61122f;
+  background-color: #123261;
   font-family: 'Oxygen', sans-serif;
 }
 
@@ -13,16 +13,15 @@ body {
 }
 
 #logo-img {
-  background: url('https://usmile581.github.io/Bistro_Restaurant/images/restaurant-logo_large.png') no-repeat;
-  width: 150px;
+  background: url('../images/logo.png') no-repeat;
+  width: 160px;
   height: 150px;
-  margin: 10px 15px 10px 0;
+  margin: 15px 15px 5px 0;
 }
 
 .navbar-brand {
   padding-top: 25px;
 }
-
 .navbar-brand h1 { /* Restaurant name */
   font-family: 'Lora', serif;
   color: #557c3e;
@@ -82,8 +81,8 @@ body {
   margin-top: -30px;
 }
 /* END HEADER */
+
 /* FOOTER */
-/* overwrite bootstrap */
 .panel-footer {
   margin-top: 30px;
   padding-top: 35px;
@@ -98,10 +97,10 @@ body {
   line-height: 2;
 }
 #hours > span, #address > span {
-  font-size: 1.3em; /*"Hours", "Address" are bigger */
+  font-size: 1.3em;
 }
 #address p {
-  color: #557c3e; /*green*/
+  color: #557c3e;
   font-size: .8em;
   line-height: 1.8;
 }
@@ -112,6 +111,7 @@ body {
   margin-top: 25px;
 }
 /* END FOOTER */
+
 
 
 /* HOME PAGE */
@@ -126,21 +126,19 @@ body {
   margin-bottom: 15px;
   position: relative;
   border: 2px solid #3F0C1F;
-  overflow: hidden; /* for map: to not stick out */
+  overflow: hidden;
 }
 #menu-tile:hover, #specials-tile:hover, #map-tile:hover {
   box-shadow: 0 1px 5px 1px #cccccc;
 }
-
 #menu-tile {
-  background: url('https://usmile581.github.io/Bistro_Restaurant/images/menu-tile.jpg') no-repeat;
+  background: url('../images/menu-tile.jpg') no-repeat;
   background-position: center;
 }
 #specials-tile {
-  background: url('https://usmile581.github.io/Bistro_Restaurant/images/specials-tile.jpg') no-repeat;
+  background: url('../images/specials-tile.jpg') no-repeat;
   background-position: center;
 }
-
 #menu-tile span, #specials-tile span, #map-tile span {
   position: absolute;
   bottom: 0;
@@ -151,15 +149,91 @@ body {
   text-transform: uppercase;
   background-color: #000;
   color: #fff;
-  opacity: .8; /*transparent */
+  opacity: .8;
+}
+/* END HOME PAGE */
+
+/* MENU CATEGORIES PAGE */
+.category-tile { 
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
 }
 
-/* END HOME PAGE */
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+/* END MENU CATEGORIES PAGE */
+
+/* SINGLE CATEGORY PAGE */
+.menu-item-tile {
+  margin-bottom: 25px;
+}
+.menu-item-tile hr {
+  width: 80%;
+}
+.menu-item-tile .menu-item-price {
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+  font-size: .6em;
+}
+.menu-item-photo {
+  position: relative;
+  border: 2px solid #3F0C1F; 
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+.menu-item-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+}
+.menu-item-description {
+  padding-right: 30px;
+}
+h3.menu-item-title {
+  margin: 0 0 10px;
+}
+.menu-item-details {
+  font-size: .9em;
+  font-style: italic;
+}
+/* END SINGLE CATEGORY PAGE */
+
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .container .jumbotron {
-    background: url('https://usmile581.github.io/Bistro_Restaurant/images/jumbotron_1200.jpg') no-repeat;
+    background: url('../images/hotel.jpg') no-repeat;
     height: 675px;
   }
 }
@@ -168,7 +242,7 @@ body {
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Header */
   #logo-img {
-    background: url('https://usmile581.github.io/Bistro_Restaurant/images/restaurant-logo_medium.png') no-repeat;
+    background: url('../images/logo.png') no-repeat;
     width: 100px;
     height: 100px;
     margin: 5px 5px 5px 0;
@@ -177,7 +251,7 @@ body {
 
   /* Home Page */
   .container .jumbotron {
-    background: url('https://usmile581.github.io/Bistro_Restaurant/images/jumbotron_992.jpg') no-repeat;
+    background: url('../images/hotel1.jpg') no-repeat;
     height: 558px;
   }
   /* End Home Page */
@@ -187,11 +261,10 @@ body {
 @media (min-width: 768px) and (max-width: 991px) {
   /* Home Page */
   .container .jumbotron {
-    background: url('https://usmile581.github.io/Bistro_Restaurant/images/jumbotron_768.jpg') no-repeat;
+    background: url('../images/hotel2.jpg') no-repeat;
     height: 432px;
   }
   /* End Home Page */
-
 }
 
 /********** Extra small devices only **********/
@@ -217,7 +290,7 @@ body {
     font-size: 1.2em;
   }
   #collapsable-nav a span { /* Collapsed nav menu glyph */
-    font-size: 1em;  /* overwrite whatever font size this selector had, and overrride it with 1em, which will take its parent element had and keep it teh same*/
+    font-size: 1em;
     margin-right: 5px;
   }
 
@@ -237,9 +310,10 @@ body {
     text-transform: uppercase;
   }
   /* End Header */
+
   /* Footer */
   .panel-footer section {
-    margin-bottom: 30px; /*increase*/
+    margin-bottom: 30px;
     text-align: center;
   }
   .panel-footer section:nth-child(3) {
@@ -255,12 +329,20 @@ body {
     margin-top: 30px;
     padding: 0;
   }
-
   #menu-tile, #specials-tile {
     width: 360px;
     margin: 0 auto 15px;
   }
 
+  .menu-item-photo {
+    margin-right: auto;
+  }
+  .menu-item-tile .menu-item-price {
+    text-align: center;
+  }
+  .menu-item-description {
+    text-align: center;;
+  }
 }
 
 
@@ -269,7 +351,7 @@ body {
   /* Header */
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 5px;
-    font-size: 6vw; /* make it a little bit bigger */
+    font-size: 6vw;
   }
   /* End Header */
   
@@ -277,5 +359,14 @@ body {
   #menu-tile, #specials-tile {
     width: 280px;
     margin: 0 auto 15px;
+  }
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
   }
 }
